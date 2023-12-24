@@ -1,0 +1,25 @@
+{
+    "name": "simd-rt",
+    "version": "1.0.0",
+    "description": "SIMD based ray tracing",
+    "main": "index.js",
+    "scripts": {
+        "test": "node tests",
+        "asbuild:debug": "asc assembly/raytracing.ts --target debug --enable simd --enable relaxed-simd --exportRuntime --runtime incremental  ",
+        "asbuild:release": "asc assembly/raytracing.ts --target release --enable simd --enable relaxed-simd --exportRuntime --runtime incremental  ",
+        "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+        "start": "npx serve ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "assemblyscript": "^0.27.19"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./build/release.js",
+            "types": "./build/release.d.ts"
+        }
+    }
+}

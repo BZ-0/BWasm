@@ -1,0 +1,6 @@
+[submodule "deps/libjxl"]
+	path = deps/libjxl
+	url = https://github.com/libjxl/libjxl.git
+[submodule "deps/lodepng"]
+	path = deps/lodepng
+	url = https://github.com/lvandeve/lodepng.git
