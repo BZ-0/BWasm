@@ -1,0 +1,22 @@
+{
+  "name": "@bz0/jspi-test",
+  "version": "1.0.0",
+  "description": "JSPI Test...",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "serve": "fastify start test/serve.mjs --port 4000 --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlazerNEO/MCoder.git"
+  },
+  "keywords": [
+  ],
+  "author": "user=404",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
